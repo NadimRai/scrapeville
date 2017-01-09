@@ -23,6 +23,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+gem 'nokogiri', '~> 1.7', '>= 1.7.0.1'
 
 
 group :development, :test do
