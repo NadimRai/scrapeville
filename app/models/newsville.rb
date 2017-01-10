@@ -1,2 +1,0 @@
-class Newsville < ApplicationRecord
-end
