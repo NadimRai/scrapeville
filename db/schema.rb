@@ -10,6 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170110065818) do
+ActiveRecord::Schema.define(version: 20170110070408) do
+
+  create_table "newsvilles", force: :cascade do |t|
+    t.string   "title_url"
+    t.string   "title"
+    t.text     "body"
+    t.string   "time"
+    t.string   "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
