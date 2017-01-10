@@ -1,4 +1,4 @@
 git add -A
-git commit -m"newsville scrape"
+git commit -m"added scrape rake task and style Newsville Index page"
 git push -u origin master
 git push heroku master
