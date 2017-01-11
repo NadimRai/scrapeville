@@ -26,6 +26,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'nokogiri', '~> 1.7', '>= 1.7.0.1'
 gem 'twitter-bootstrap-rails', '~> 3.2', '>= 3.2.2'
 gem 'simple_form', '~> 3.4'
+gem 'devise', '~> 4.2'
 
 
 group :development, :test do
