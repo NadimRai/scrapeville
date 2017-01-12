@@ -27,3 +27,9 @@
 
 <%= link_to 'Edit', edit_newsville_path(@newsville) %> |
 <%= link_to 'Back', newsvilles_path %>
+
+<%= render @newsville.comments %>
+<%= simple_form_for [@newsville, Comment.new] do |comment| %>
+  <%= comment.input :body %>
+  <%= comment.submit "Add Comment", class: "btn btn-danger" %>
+ <% end %>
