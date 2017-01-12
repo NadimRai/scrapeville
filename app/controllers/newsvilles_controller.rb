@@ -19,6 +19,7 @@ class NewsvillesController < ApplicationController
 
   # GET /newsvilles/1/edit
   def edit
+    authorize! :update, @newsville
   end
 
   # POST /newsvilles
@@ -40,6 +41,7 @@ class NewsvillesController < ApplicationController
   # PATCH/PUT /newsvilles/1
   # PATCH/PUT /newsvilles/1.json
   def update
+    authorize! :update, @newsville
     respond_to do |format|
       if @newsville.update(newsville_params)
         format.html { redirect_to @newsville, notice: 'Newsville was successfully updated.' }
@@ -54,6 +56,7 @@ class NewsvillesController < ApplicationController
   # DELETE /newsvilles/1
   # DELETE /newsvilles/1.json
   def destroy
+    authorize! :destroy, @newsville
     @newsville.destroy
     respond_to do |format|
       format.html { redirect_to newsvilles_url, notice: 'Newsville was successfully destroyed.' }
