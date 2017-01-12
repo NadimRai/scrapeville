@@ -1,5 +1,6 @@
 class NewsvillesController < ApplicationController
   before_action :set_newsville, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /newsvilles
   # GET /newsvilles.json

@@ -4,6 +4,9 @@
  <h4>Comment by <%= comment.user.username %></h4>
 
  <p><%= comment.body %></p>
-
+ <% if can? :destroy, comment %>
+ <%= link_to 'Destroy', [comment.newsville, comment], method: :delete,
+ data: { confirm: 'Are you sure?' }, class: "btn btn-primary btn-xs" %>
+<% end %>
  </div>
 </div>
