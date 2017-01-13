@@ -28,6 +28,7 @@ gem 'twitter-bootstrap-rails', '~> 3.2', '>= 3.2.2'
 gem 'simple_form', '~> 3.4'
 gem 'devise', '~> 4.2'
 gem 'cancancan', '~> 1.15'
+gem 'paperclip', '~> 5.1'
 
 
 group :development, :test do
