@@ -43,6 +43,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'sqlite3'
+  gem 'figaro', '~> 1.1', '>= 1.1.1'
 end
 
 group :production do
