@@ -29,6 +29,8 @@ gem 'simple_form', '~> 3.4'
 gem 'devise', '~> 4.2'
 gem 'cancancan', '~> 1.15'
 gem 'paperclip', '~> 5.1'
+gem 'will_paginate', '~> 3.1', '>= 3.1.5'
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 
 
 group :development, :test do
